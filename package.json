@@ -35,20 +35,10 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.js": [
-        "yarn lint:js --fix",
-        "git add"
-      ],
-      "*.html": [
-        "yarn lint:js --fix",
-        "git add"
-      ],
-      "package.json": [
-        "yarn lint:package",
-        "git add"
-      ]
-    }
+    "*.js": "yarn lint:js --fix",
+    "*.html": "yarn lint:js --fix",
+    "package.json": "yarn lint:package",
+    "*": "git add -A"
   },
   "dependencies": {
     "keycode": "^2.2.0",
