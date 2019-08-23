@@ -39,8 +39,14 @@
       "yarn lint:js --fix",
       "git add"
     ],
-    "*.js": "yarn lint:js --fix",
-    "package.json": "yarn lint:package"
+    "*.js": [
+      "yarn lint:js --fix",
+      "git add"
+    ],
+    "package.json": [
+      "yarn lint:package",
+      "git add"
+    ]
   },
   "dependencies": {
     "keycode": "^2.2.0",
