@@ -1,4 +1,6 @@
-import React, { useMemo } from 'react';
+// import React, { useMemo } from 'react';
+import React from 'react';
+
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { color, typography } from '../shared/styles';
@@ -164,7 +166,9 @@ export function ListItem({
   );
 
   if (LinkWrapper) {
-    const StyledLinkWrapper = useMemo(() => buildStyledLinkWrapper(LinkWrapper), [LinkWrapper]);
+    const StyledLinkWrapper = () => {
+      buildStyledLinkWrapper(LinkWrapper);
+    };
 
     return (
       <ItemWrapper>

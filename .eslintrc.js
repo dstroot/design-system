@@ -33,5 +33,6 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.stories.js'] }],
+    'react/jsx-props-no-spreading': ['off', { custom: 'ignore' }],
   },
 };

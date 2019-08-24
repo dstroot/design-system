@@ -1,0 +1,8 @@
+// Create a .storybook/webpack.config.js file.
+// Edit its contents:
+
+module.exports = async ({ config }) => console.dir(config.plugins, { depth: null }) || config;
+
+// Then run:
+// `$ yarn storybook --debug-webpack`
+// The console should log the entire config, for you to inspect.
